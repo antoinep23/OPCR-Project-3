@@ -1,2 +1,2 @@
 # OPCR-Journey
-My first projet on Openclassrooms's Journey
+My first project on Openclassrooms's Journey
