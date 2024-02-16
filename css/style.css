@@ -1,8 +1,8 @@
 * {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-        max-width: 1440px;
-        margin:0;
+    /* max-width: 1440px; */
+    margin:0;
 }
 
 :root {
@@ -18,6 +18,8 @@ body {
 /* Header */
 
 header {
+    max-width:1440px;
+    margin:auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -219,7 +221,9 @@ header {
 
 .section2 {
     display: flex;
-    gap:40px;
+    flex-wrap:wrap; 
+    row-gap:40px;
+    column-gap:20px;
 }
 
 .part1Section2 {
@@ -229,7 +233,7 @@ header {
     width: 900px;
     height: 640px;
     border-radius: 15px;
-    margin:35px 0 35px 50px;
+    margin:35px 0 0 50px;
 }
 
 .part1Section2 h2 {
@@ -299,17 +303,18 @@ header {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 410px;
     height: 640px;
     border-radius: 15px;
-    margin:35px 40px 35px 0;
-    padding: 0 29px 0 29px;
+    margin:35px 0;
+    
+    padding: 0 9px 0 9px;
 }
 
 .columnPart2 {
     display: flex;
     flex-direction: column;
-    gap: 29px;
+    gap:10px;
 }
 
 .titlePart2 {
@@ -326,7 +331,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0 30px 0;
+    padding: 30px 20px 30px 20px;
 }
 
 .hotelPart2 {
@@ -336,6 +341,7 @@ header {
     border-radius: 20px;
     height: 147px;
     width: 350px;
+    min-width:220px;
 }
 
 .hotelPart2 img {
@@ -428,13 +434,19 @@ a {
 
 footer {
     background-color: var(--main-bg-color);
-    margin:50px 50px 0 50px;
-    display: flex;
-    flex-direction: row;
+    /* margin:50px 50px 0 50px; */
+    /* display: flex; */
+}
+
+.containerFooter{
+    display:flex;
+    justify-content: space-around;
+    max-width:1440px;
+    margin:auto;
 }
 
 .divFooter {
-    width:447px;
+    /* width:447px; */
     height:163px;
     display: flex;
     flex-direction: column;
@@ -587,7 +599,8 @@ footer {
         flex-direction: column-reverse;
         margin-left: 0;
         margin: auto;
-        width: 100%;
+        /* width: 100%; */
+        width: 90%;
     }
 
   
@@ -600,11 +613,12 @@ footer {
         margin-top: 610px;
         margin-bottom: 650px;
         gap: 40px;
-        width: 300px;
+        width:90%;
     }
 
     .afficher-plus{
         padding:0;
+        margin: auto;
     }
 
    .divGrid {
@@ -617,6 +631,7 @@ footer {
 
     .part1Section2 h2 {
       padding-left: 0px;
+      margin: auto;
     }
 
     .hotel {
@@ -698,6 +713,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 767px){
+    .containerFooter {
+        flex-direction: column;
+    }
+}
+
 /* Tablette */ 
 @media  screen and (min-width: 768px) and (max-width: 1024px) { 
     
@@ -745,7 +766,7 @@ footer {
     }
 
     .part2Section2{
-        width: 90%;
+        width: 95%;
         height: 300px;
         margin: auto;
     }
@@ -791,16 +812,23 @@ footer {
 }
 
 
+@media  screen and (min-width:1024px) and (max-width: 1440px) {
+    .part2Section2 {
+        margin-left:50px;
+    }
+}
 
-/* Grand écran */
+/* 
+Grand écran */
 @media  screen and (min-width: 1440px) {
-    body{
+    main{
         margin: auto;
-        display: flex;
+        max-width:1440px;
+        /* display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; */
     }
 
     
 
-}
+} 
