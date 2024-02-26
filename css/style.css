@@ -230,7 +230,7 @@ header {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 850px;
     height: 640px;
     border-radius: 15px;
     margin:35px 0 0 50px;
@@ -257,7 +257,7 @@ header {
 .hotel {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 230px;
     height: 207px;
     background-color: white;
     border: solid white 5px;
@@ -286,7 +286,7 @@ header {
 }
 
 .imgHotel {
-    width: 250px;
+    width: 230px;
     height:124px;
     border-radius: 20px 20px 0rem 0rem;
     object-fit: cover;
@@ -314,7 +314,7 @@ header {
 .columnPart2 {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 1.5rem;
 }
 
 .titlePart2 {
@@ -342,6 +342,7 @@ header {
     height: 147px;
     width: 350px;
     min-width:220px;
+    margin: auto;
 }
 
 .hotelPart2 img {
@@ -513,14 +514,10 @@ footer {
     .section1 {
         padding:30px;
         width:70%;
-        margin: auto;
+        margin: auto auto auto 2%;
         align-items: center;
-        margin-left: 2.5rem;
     }
 
-    .section1 h1{
-        padding-left: 3rem;
-    }
 
     .gridResponsive {
         display: grid;
@@ -553,7 +550,6 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0;
         width: 300px;
     }
 
@@ -638,11 +634,19 @@ footer {
         box-shadow: 0px 5px 8px var(--main-bg-color);
         gap:15px;
         width: 300px;
-        height: 250px;
+        height: 230px;
     }
 
     .hotel img {
         width:300px;
+    }
+
+    .hotel h2{
+        margin-left: 15px;
+    }
+
+    .afficher-plus{
+        margin-left: 0;
     }
 
     /* Section2 Part2 */
