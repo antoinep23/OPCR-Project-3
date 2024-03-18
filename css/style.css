@@ -1,7 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    /* max-width: 1440px; */
     margin:0;
 }
 
@@ -435,23 +434,23 @@ a {
 
 footer {
     background-color: var(--main-bg-color);
-    /* margin:50px 50px 0 50px; */
-    /* display: flex; */
+    width: 95%;
+    margin: auto;
 }
 
 .containerFooter{
     display:flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 20%;
     max-width:1440px;
     margin:auto;
 }
 
 .divFooter {
-    /* width:447px; */
     height:163px;
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: flex-start;
     gap:15px;
     padding:0 20px 20px 20px;
 }
@@ -595,7 +594,6 @@ footer {
         flex-direction: column-reverse;
         margin-left: 0;
         margin: auto;
-        /* width: 100%; */
         width: 90%;
     }
 
@@ -751,7 +749,6 @@ footer {
     .section2 {
         flex-direction: column;
         align-items: center;
-        /*width: 900px;*/
         width:95%;
         margin:auto;
     }
@@ -813,7 +810,14 @@ footer {
     #activite-vp{
         height:200px;
     }
+    /* Footer */
+
+    .containerFooter{
+        gap: 10%;
+    }
 }
+
+
 
 
 @media  screen and (min-width:1024px) and (max-width: 1440px) {
@@ -828,11 +832,5 @@ Grand écran */
     main{
         margin: auto;
         max-width:1440px;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
     }
-
-    
-
 } 
